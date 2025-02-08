@@ -12,4 +12,10 @@ Rails.application.routes.draw do
   # フロントエンドの静的ファイルを提供
   get '*path', to: 'home#index', constraints: ->(request) { !request.xhr? && request.format.html? }
 
+  # APIエンドポイント
+  namespace :api do
+    namespace :v1 do
+      resources :your_resources
+    end
+  end
 end
