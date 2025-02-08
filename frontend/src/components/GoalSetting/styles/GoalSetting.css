@@ -1,0 +1,252 @@
+/* 全体のコンテナ */
+.goal-setting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* ヘッダーのスタイル */
+.goal-setting-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* 入力警告メッセージのスタイル */
+.input-warning {
+  color: #d9534f; /* 赤色 */
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* フォーム全体のスタイル */
+.goal-setting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(162, 217, 255, 0.8);
+  border-radius: 8px;
+  background-color: rgba(162, 217, 255, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 各フィールドのスタイル */
+.goal-setting-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+/* ラベルのスタイル */
+.goal-setting-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 25px;
+}
+
+/* 入力フィールドのスタイル */
+.goal-setting-input-wrapper {
+  position: relative;
+}
+
+.goal-setting-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-color: #a2d9ff;
+  border-radius: 4px;
+  font-size: 24px;
+  transition: border-color 0.3s;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.goal-setting-input:focus {
+  border-color: #5d9cec;
+  outline: none;
+}
+
+/* ボタンのスタイル */
+.goal-setting-button {
+  padding: 12px;
+  background-color: #87CEFA;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid rgba(162, 217, 255, 1);
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 150px;
+  align-self: center;
+}
+
+.goal-setting-button:hover {
+  background-color: #4a8ad4;
+  transform: translateY(-2px);
+}
+
+.goal-setting-button:active {
+  background-color: #3a7ac4;
+  transform: translateY(0);
+}
+
+/* 提出されたデータのスタイル */
+.submitted-data {
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: 2px solid rgba(162, 217, 255, 0.8);
+  border-radius: 8px;
+  background-color: rgba(162, 217, 255, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.submitted-data h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 10px 0; /* 上下の幅を設定 */
+  font-weight: bold;
+}
+
+.submitted-data p {
+  font-size: 22px;
+  color: #555;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* モーダルウィンドウのスタイル */
+.goal-setting-modal, .goal-setting-modal-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* 背景の半透明 */
+}
+
+/* 電卓のモーダルウィンドウのコンテンツスタイル */
+.goal-setting-modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 250px; /* 固定幅に変更 */
+  max-width: 100%; /* 最大横幅をさらに狭く */
+  border-radius: 10px;
+  text-align: center; /* 中央寄せ */
+  position: relative;
+}
+
+/* カレンダーのモーダルウィンドウのコンテンツスタイル */
+.goal-setting-modal-content-calendar {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* 幅を50%に設定 */
+  max-width: 800px; /* 最大幅を800pxに設定 */
+  border-radius: 10px;
+  text-align: center; /* 中央寄せ */
+  position: relative;
+}
+
+/* キーボード風の入力スタイル */
+.goal-setting-keyboard-input {
+  font-size: 24px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  text-align: center; /* 中央寄せ */
+  border: 1px solid #a2d9ff; /* 薄い青色の枠線 */
+  border-radius: 10px; /* 角を丸く */
+}
+
+/* 電卓のグリッドスタイル */
+.goal-setting-calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.goal-setting-calculator-grid button {
+  padding: 20px;
+  font-size: 24px; /* 文字を大きく */
+  background-color: rgba(162, 217, 255, 0.1);
+  border: 1px solid #a2d9ff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px; /* ボタンを大きく */
+}
+
+.goal-setting-calculator-grid button:hover {
+  background-color: #a2d9ff;
+}
+
+/* モーダル内の保存ボタンのスタイル */
+.goal-setting-modal-button {
+  background-color: #87CEFA; /* 薄い青色 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.goal-setting-modal-button:hover {
+  background-color: #00BFFF; /* ホバー時の色 */
+}
+
+/* 警告モーダルのスタイル */
+.goal-setting-warning-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 背景の半透明を少し濃く */
+}
+
+.goal-setting-warning-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border: 2px solid #d9534f; /* 赤色の枠線 */
+  width: 320px; /* 幅を少し広く */
+  max-width: 90%; /* 最大横幅を90%に */
+  border-radius: 12px; /* 角を少し丸く */
+  text-align: center; /* 中央寄せ */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+.goal-setting-warning-modal-content p {
+  font-size: 20px;
+  color: #d9534f; /* 赤色 */
+  margin: 15px 0;
+  font-weight: bold;
+}

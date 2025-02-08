@@ -1,0 +1,126 @@
+/* トレーニングメニューコンテナ */
+.training-menu-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* 中央寄せ */
+  border: 2px solid #87CEFA;
+}
+
+/* フォームグループ */
+.training-menu-form-group {
+  margin-bottom: 15px;
+  text-align: center; /* 中央寄せ */
+}
+
+/* フォームラベル */
+.training-menu-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* フォームセレクト */
+.training-menu-form-group select {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  outline: 1px solid #87CEFA;
+  outline-offset: 2px;
+  font-weight: bold;
+}
+
+/* サブミットボタン */
+.training-menu-submit-button {
+  width: 20%;
+  padding: 10px;
+  background-color: #87CEFA;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid rgba(162, 217, 255, 1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.training-menu-submit-button:hover {
+  background-color: #4a8ad4;
+  transform: translateY(-2px);
+}
+
+/* メニュー結果 */
+.training-menu-menu-result {
+  margin-top: 20px;
+  padding: 15px;
+
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.training-menu-menu-result h2 {
+  color: #007acc;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.training-menu-menu-result pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* メニュータイトル */
+.training-menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* メニューリスト */
+.training-menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* メニューリストアイテム */
+.training-menu-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* メニュー曜日 */
+.training-menu-day {
+  font-weight: bold;
+  color: #007acc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 未入力時のエラーメッセージ */
+.training-menu-error-message {
+  color: red;
+  font-weight: bold;
+}
