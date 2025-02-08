@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   get "/favicon.ico", to: redirect("/path/to/your/favicon.ico")
 
   root "home#index"
+  
+  # フロントエンドの静的ファイルを提供
+  get '*path', to: 'home#index', constraints: ->(request) { !request.xhr? && request.format.html? }
 
 end
